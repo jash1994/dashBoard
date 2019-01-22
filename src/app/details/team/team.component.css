@@ -1,0 +1,9 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+.list-group li{
+  margin: 3px;
+  cursor: pointer;
+  border-radius: 10px;
+}
