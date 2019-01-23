@@ -17,6 +17,7 @@ import { StartComponent } from './details/start/start.component';
 import { NgbdModalBasicComponent } from './details/modal/modal-basic';
 import { ReviewService } from './review.service';
 import { MovieReviewComponent } from './details/movie-review/movie-review.component';
+import { ScreenoneComponent } from './details/screenone/screenone.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { MovieReviewComponent } from './details/movie-review/movie-review.compon
     StartComponent,
     NgbdModalBasicComponent,
     MovieReviewComponent,
+    ScreenoneComponent,
   ],
   imports: [
     BrowserModule,
