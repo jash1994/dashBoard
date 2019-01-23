@@ -12,20 +12,19 @@ export class NgbdModalBasicComponent {
 
   constructor(private modalService: NgbModal) {}
 
-  openVerticallyCentered(content) {
-    this.modalService.open(content, { centered: true });
-  }
-
-  openLg(content) {
-    this.modalService.open(content, { size: 'lg' });
-  }
-
   open(content) {
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
     }, (reason) => {
       this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
     });
+  }
+  openVerticallyCentered(content) {
+    this.modalService.open(content, { centered: true, backdrop: false});
+  }
+
+  openLg(content) {
+    this.modalService.open(content, { size: 'lg' });
   }
 
   private getDismissReason(reason: any): string {
