@@ -8,6 +8,7 @@ import { StartComponent } from './details/start/start.component';
 import { NgbdModalBasicComponent } from './details/modal/modal-basic';
 import { MovieReviewComponent } from './details/movie-review/movie-review.component';
 import { ScreenoneComponent } from './details/screenone/screenone.component';
+import { ScreentwoComponent } from './details/screentwo/screentwo.component';
 
 
 const routes: Routes = [
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'team', component: TeamComponent},
   { path: 'modal', component: NgbdModalBasicComponent},
   { path: 'review', component: MovieReviewComponent},
-  { path: 'screenOne', component: ScreenoneComponent}
+  { path: 'screenOne', component: ScreenoneComponent},
+  { path: 'screenTwo', component: ScreentwoComponent}
 
 ];
 

@@ -18,6 +18,7 @@ import { NgbdModalBasicComponent } from './details/modal/modal-basic';
 import { ReviewService } from './review.service';
 import { MovieReviewComponent } from './details/movie-review/movie-review.component';
 import { ScreenoneComponent } from './details/screenone/screenone.component';
+import { ScreentwoComponent } from './details/screentwo/screentwo.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ScreenoneComponent } from './details/screenone/screenone.component';
     NgbdModalBasicComponent,
     MovieReviewComponent,
     ScreenoneComponent,
+    ScreentwoComponent,
   ],
   imports: [
     BrowserModule,
