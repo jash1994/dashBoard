@@ -12,7 +12,7 @@
     <button type="button" name="" class="btn btn-primary btn-lg btn-block">Reviews</button>
     <ul class="list-group m-1" *ngFor="let rev of allReviews">
       <li class="list-group-item d-flex justify-content-between align-items-center ">
-        <span class="badge badge-danger badge-pill">{{rev.confidence}}</span>
+        <span class="badge badge-danger badge-pill">{{rev.confidence}}%</span>
         {{rev.review}}
       </li>
     </ul>

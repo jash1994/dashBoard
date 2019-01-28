@@ -1,8 +1,5 @@
 import { Component, OnInit, Injectable} from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { ReviewService } from 'src/app/review.service';
-import { stringify } from '@angular/compiler/src/util';
-import { MReview } from 'src/app/review';
 
 @Component({
   selector: 'app-team',
