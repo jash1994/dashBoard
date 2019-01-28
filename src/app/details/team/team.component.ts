@@ -12,15 +12,23 @@ import { MReview } from 'src/app/review';
 
 export class TeamComponent implements OnInit {
 
-  public allReviews = [];
+  public allReviews = {};
 
   constructor( private reviewService: ReviewService) {}
 
 
   ngOnInit() {
-       this.reviewService.getReviews()
-      .subscribe(data => [this.allReviews.push(data)]);
-      console.log(this.allReviews);
+    this.reviewService.getReviews()
+    .subscribe(
+      data => {
+        this.allReviews = data.reviews;
+        console.log(data.reviews[0].review, 'reviews');
+      },
+      error => {
+        alert('ERROR');
+      });
   }
+
+
 
 }
