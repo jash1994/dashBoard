@@ -13,7 +13,7 @@ export class ReviewService {
   constructor( private http: HttpClient) {}
 
   getReviews(): Observable<MReview> {
-  return this.http.get<MReview>('http://deeplearning.maguresoftwares.com/movie_rv/mspl_ml/get_previous_reviews?reviews');
+  return this.http.get<MReview>('http://deeplearning.maguresoftwares.com/movie_rv/mspl_ml/get_previous_reviews');
   }
 
 }
