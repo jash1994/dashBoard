@@ -4,8 +4,8 @@
   <div class="col-md-6">
     <div class="form-group">
       <label for="message" class="mb-2">Enter a Review</label>
-      <textarea class="form-control" name="" id="" rows="4"></textarea>
-      <button type="button" class="btn btn-outline-primary mt-2">Submit</button>
+      <textarea class="form-control" name="" id="" rows="4" [(ngModel)]="newReview")]></textarea>
+      <button type="button" class="btn btn-outline-primary mt-2" (click)="onSubmit()">Submit</button>
     </div>
   </div>
   <div class="col-md-6">

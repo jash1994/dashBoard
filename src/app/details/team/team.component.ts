@@ -12,7 +12,7 @@ export class TeamComponent implements OnInit {
   public allReviews = {};
 
   constructor( private reviewService: ReviewService) {}
-
+  public newReview = [];
 
   ngOnInit() {
     this.reviewService.getReviews()
@@ -26,6 +26,9 @@ export class TeamComponent implements OnInit {
       });
   }
 
+  onSubmit() {
+    console.log( 'TextAreaComponent::newReview: ' + this.newReview);
+  }
 
 
 }

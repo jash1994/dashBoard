@@ -10,4 +10,9 @@ export interface MReview {
     review: any[];
     positive_review: any[];
   };
+  newReview: {
+    entered_review: any[];
+    positive_review: any[];
+
+  };
 }
