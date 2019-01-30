@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { Ng4LoadingSpinnerModule } from 'ng4-loading-spinner';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -41,6 +42,7 @@ import { ScreentwoComponent } from './details/screentwo/screentwo.component';
     AppRoutingModule,
     RouterModule,
     NgbModule.forRoot(),
+    Ng4LoadingSpinnerModule.forRoot()
   ],
   providers: [ReviewService],
   bootstrap: [AppComponent]
