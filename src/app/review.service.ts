@@ -36,14 +36,6 @@ export class ReviewService {
 
   }
 
-  // loading spinner
 
-  loadSpinner() {
-    this.ng4LoadingSpinnerService.show();
-    // To test threshold change delay in query string it accepts time in secs
-    this.http.get('https://reqres.in/api/users?delay=2').subscribe((res: Response) => {
-      this.ng4LoadingSpinnerService.hide();
-    });
-  }
 }
 

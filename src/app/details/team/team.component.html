@@ -16,21 +16,25 @@
       <div *ngFor="let p of personReview">
           <p>{{p}}</p>
         </div>
-        <div class="spinner" *ngIf="showSpinner">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
-        </div>
+
       <div class="icons .hvr-radial-out">
         <img src="https://s3-us-west-2.amazonaws.com/www.breadware.com/spinner.gif" alt="loading.gif">
-          <a href="#" class="hvr-icon-grow" *ngIf="good">
-              <i class="far fa-thumbs-up fa-3x hvr-icon"></i>
-              <p>Positive</p>
-          </a>
-          <a href="#" class="hvr-icon-grow" *ngIf="bad">
-              <i class="far fa-thumbs-down fa-3x hvr-icon "></i>
-              <p>Negative</p>
-          </a>
+
+        <div class="spinner" *ngIf="showSpinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+        </div>
+
+        <a href="#" class="hvr-icon-grow" *ngIf="good">
+            <i class="far fa-thumbs-up fa-3x hvr-icon"></i>
+            <p>Positive</p>
+        </a>
+        <a href="#" class="hvr-icon-grow" *ngIf="bad">
+            <i class="far fa-thumbs-down fa-3x hvr-icon "></i>
+            <p>Negative</p>
+        </a>
+
       </div>
     </div>
   </div>

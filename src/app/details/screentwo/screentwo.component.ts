@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-screentwo',
@@ -8,11 +7,8 @@ import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 })
 export class ScreentwoComponent implements OnInit {
 
-  constructor( private modalService: NgbModal) { }
+  constructor() { }
 
-  openVerticallyCentered(content) {
-    this.modalService.open(content, { centered: true});
-  }
   ngOnInit() {
   }
 
