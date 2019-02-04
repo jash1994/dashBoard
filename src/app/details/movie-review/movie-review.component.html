@@ -1,13 +1,38 @@
-<p class="display-4">Reviews</p>
-<div class="row">
-  <div class="col-md-6">
-    <ul class="list-group" *ngFor="let item of movieReviews">
-      <li class="list-group-item d-flex justify-content-between align-items-center">
-         {{ item.reviews}}
-        <span class="badge badge-warning badge-pill">pill1</span>
-      </li>
 
-    </ul>
+<ngb-tabset type="pills" >
+  <ngb-tab  *ngFor= "let item of bakers" title="{{item.name}}">
+    <ng-template ngbTabContent>
+        <h3>Batters</h3>
+      <table class="table table-light">
+        <thead>
+            <tr>
+              <th>ID</th>
+              <th>type</th>
+            </tr>
+          </thead>
+      <tbody>
+        <tr *ngFor="let val of item.batters.batter">
+          <td>{{val.id}}</td>
+          <td>{{val.type}}</td>
+        </tr>
+      </tbody>
+    </table> <hr>
 
-  </div>
-</div>
+    <h3>Topping</h3>
+    <table class="table table-light">
+      <thead>
+          <tr>
+            <th>ID</th>
+            <th>type</th>
+          </tr>
+        </thead>
+    <tbody>
+      <tr *ngFor="let val of item.topping">
+        <td>{{val.id}}</td>
+        <td>{{val.type}}</td>
+      </tr>
+    </tbody>
+  </table>
+    </ng-template>
+  </ngb-tab>
+</ngb-tabset>

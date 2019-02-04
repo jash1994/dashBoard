@@ -5,6 +5,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { Ng4LoadingSpinnerModule } from 'ng4-loading-spinner';
 
+import { ReviewService } from './review.service';
+import { EmployeeServiceService } from './employee-service.service';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,7 +19,6 @@ import { RouterModule } from '@angular/router';
 import { TeamComponent } from './details/team/team.component';
 import { StartComponent } from './details/start/start.component';
 import { NgbdModalBasicComponent } from './details/modal/modal-basic';
-import { ReviewService } from './review.service';
 import { MovieReviewComponent } from './details/movie-review/movie-review.component';
 import { ScreenoneComponent } from './details/screenone/screenone.component';
 import { ScreentwoComponent } from './details/screentwo/screentwo.component';
@@ -44,7 +46,7 @@ import { ScreentwoComponent } from './details/screentwo/screentwo.component';
     NgbModule.forRoot(),
     Ng4LoadingSpinnerModule.forRoot()
   ],
-  providers: [ReviewService],
+  providers: [ReviewService, EmployeeServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
